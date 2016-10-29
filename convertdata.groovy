@@ -55,6 +55,6 @@ Paths.get('sekolahrendahdanmenengahmac2015.xlsx').withInputStream { input ->
     }
 }
 
-Paths.get('countryInfo.xlsx.json').withWriter { jsonWriter ->
+Paths.get('convertedSchoolsData.xlsx.json').withWriter { jsonWriter ->
     jsonWriter.write JsonOutput.prettyPrint(JsonOutput.toJson(values))
 }
